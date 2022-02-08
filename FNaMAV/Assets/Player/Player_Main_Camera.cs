@@ -4,38 +4,12 @@ using UnityEngine;
 
 public class Player_Main_Camera : MonoBehaviour
 {
-    public CharacterController controller;
-    public float Rotate_speed;
-    public GameObject B_rotation_left;
-    public GameObject B_rotation_right;
-    public int a = 2;
+    public float mouseSensitivity = 100f;
+    public Transform playerBody;
 
-    void FixedUpdate() {
-        Debug.Log(a);
-        if (a == 1){
-            B_rotation_left.SetActive(true);
-            B_rotation_right.SetActive(false);
-        }
-        if (a == 2){
-            B_rotation_left.SetActive(true);
-            B_rotation_right.SetActive(true);
-        }
-        if (a == 3){
-            B_rotation_left.SetActive(false);
-            B_rotation_right.SetActive(true);
-        }
-    }
-
-    public void Start() {
-        B_rotation_left.SetActive(true);
-        B_rotation_right.SetActive(true);
-    }
-
-    public void rotation_left(){
-        a -= 1;
-    }
-
-    public void rotation_right(){
-        a += 1;
+    void Update() {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        playerBody.Rotate(Vector3.up * mouseX);
+        mouseX = Mathf.Clamp(mouseX, 90f, 270f);
     }
 }
