@@ -10,14 +10,14 @@ public class Player_controller : MonoBehaviour
     public GameObject B_right;
     public GameObject B_camera_up;
 
-    public GameObject Tablet;
     public GameObject Flashlight;
+    public GameObject Luke;
     
     public float RotationSpeed = 8f;
 
     public AudioSource flashlightAudeo;
     public int R = 1;
-    public int C = 0;
+    public int L = 0;
 
     void Update() {
     ///Debug.Log(R);
@@ -43,23 +43,18 @@ public class Player_controller : MonoBehaviour
 
         if(R == 1){
             PlayerBody.transform.rotation = Quaternion.Lerp(PlayerBody.transform.rotation, Quaternion.AngleAxis(0, Vector3.up), RotationSpeed * Time.deltaTime);
-            B_left.SetActive(true);
-            B_right.SetActive(true);
             B_camera_up.SetActive(true);
 
             Flashlight.SetActive(false);
-            if(C == 0){
-                Tablet.SetActive(false);
+
+            if(tablet_controller.tabl == 0){
                 B_left.SetActive(true);
                 B_right.SetActive(true);
             }
-            if(C == 1){
-                Tablet.SetActive(true);
+
+            if(tablet_controller.tabl == 1){
                 B_left.SetActive(false);
                 B_right.SetActive(false);
-            }
-            if(C == 2){
-                C = 0;
             }
         }
     }
@@ -70,8 +65,5 @@ public class Player_controller : MonoBehaviour
 
     public void Button_right(){
         R -= 1;
-    }
-    public void Button_camera_up(){
-        C += 1;
     }
 }
