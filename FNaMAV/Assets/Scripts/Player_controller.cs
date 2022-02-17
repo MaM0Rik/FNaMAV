@@ -11,6 +11,7 @@ public class Player_controller : MonoBehaviour
     public GameObject B_camera_up;
 
     public GameObject Flashlight;
+    public GameObject obj_tablet;
     public GameObject Luke;
     
     public float RotationSpeed = 8f;
@@ -18,6 +19,7 @@ public class Player_controller : MonoBehaviour
     public AudioSource flashlightAudeo;
     public int R = 1;
     public int L = 0;
+    public int tabl = 0;
 
     void Update() {
     ///Debug.Log(R);
@@ -29,6 +31,7 @@ public class Player_controller : MonoBehaviour
             B_right.SetActive(true);
 
             Flashlight.SetActive(false);
+
         }
 
         if(R == 0){
@@ -46,16 +49,21 @@ public class Player_controller : MonoBehaviour
             B_camera_up.SetActive(true);
 
             Flashlight.SetActive(false);
-
-            if(tablet_controller.tabl == 0){
+            
+            if(tabl == 0){
+                obj_tablet.SetActive(false);
                 B_left.SetActive(true);
                 B_right.SetActive(true);
-            }
-
-            if(tablet_controller.tabl == 1){
+        }
+            if(tabl == 1){
+                obj_tablet.SetActive(true);
                 B_left.SetActive(false);
                 B_right.SetActive(false);
-            }
+        }
+            if(tabl == 2){
+                tabl = 0;
+        }
+            
         }
     }
 
@@ -65,5 +73,9 @@ public class Player_controller : MonoBehaviour
 
     public void Button_right(){
         R -= 1;
+    }
+
+    public void Button_tablet(){
+        tabl += 1;
     }
 }
