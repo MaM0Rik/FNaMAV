@@ -7,6 +7,5 @@ public class tablet_controller : MonoBehaviour
     public GameObject[] cameras;
 
     void Update(){
-
     }
 }

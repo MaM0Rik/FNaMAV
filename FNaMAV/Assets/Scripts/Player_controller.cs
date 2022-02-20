@@ -17,8 +17,7 @@ public class Player_controller : MonoBehaviour
     public float RotationSpeed = 8f;
 
     public AudioSource flashlightAudeo;
-    public int R = 1;
-    public int L = 0;
+    public static int R = 1;
     public int tabl = 0;
 
     void Update() {
