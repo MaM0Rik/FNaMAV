@@ -150,10 +150,12 @@ Transform:
   m_LocalPosition: {x: 5.7782183, y: -4.827522, z: -6.2673273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1288496147}
+  - {fileID: 1520515815}
   - {fileID: 1981683989}
   - {fileID: 1324602495}
   - {fileID: 1770237420}
+  - {fileID: 335970114}
+  - {fileID: 1960778875}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1535,6 +1537,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3a98fa9e79082f44b96fe4580fae292b, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_Name
       value: Luke_obj  (3)
@@ -6441,6 +6447,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &335970113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335970114}
+  m_Layer: 0
+  m_Name: b_point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &335970114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335970113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.278218, y: 8.108, z: 6.217327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2493603}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358857283
 GameObject:
   m_ObjectHideFlags: 0
@@ -12786,7 +12822,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2493603}
+    m_TransformParent: {fileID: 1960778875}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_RootOrder
@@ -12806,15 +12842,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.2782183
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.327522
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.217327
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12848,6 +12884,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3a98fa9e79082f44b96fe4580fae292b, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_Name
       value: 'Luke_obj '
@@ -16852,6 +16892,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 3a98fa9e79082f44b96fe4580fae292b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_Name
       value: Luke_obj  (1)
       objectReference: {fileID: 0}
@@ -20783,6 +20827,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Luke_status: 0
   Luke_obj: {fileID: 1288496144}
+  speed: 1
+  a_point: {fileID: 1520515815}
+  b_point: {fileID: 335970114}
 --- !u!1 &1291632557
 GameObject:
   m_ObjectHideFlags: 0
@@ -22326,6 +22373,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3a98fa9e79082f44b96fe4580fae292b, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f1831e8caddc6e4fbaf85088e0f4e77, type: 3}
       propertyPath: m_Name
       value: Luke_obj  (2)
@@ -24359,6 +24410,36 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1520515814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520515815}
+  m_Layer: 0
+  m_Name: a_point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520515815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520515814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.278218, y: 7.327522, z: 6.217327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2493603}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529649756
 GameObject:
   m_ObjectHideFlags: 0
@@ -31624,6 +31705,37 @@ Transform:
   - {fileID: 1093893343}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1960778874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960778875}
+  m_Layer: 0
+  m_Name: Luke main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1960778875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960778874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.278218, y: 7.327522, z: 6.217327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1288496147}
+  m_Father: {fileID: 2493603}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1973718202
 Mesh:
